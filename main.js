@@ -1,5 +1,8 @@
-(function(){
-var canvas = document.getElementById('game');
+var gameModule=(function()
+{
+  function start()
+  {
+   var canvas = document.getElementById('game');
    var ctx = canvas.getContext('2d');
  
      var ballX = Math.floor(Math.random() * 300); // 0..300
@@ -13,4 +16,8 @@ var canvas = document.getElementById('game');
    ctx.beginPath();
    ctx.arc(ballX, ballY, ballR, 0, Math.PI * 2 , true);
    ctx.fill();
+  }
+   return{start:start}
 })();
+
+gameModule.start();
