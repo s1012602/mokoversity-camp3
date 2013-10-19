@@ -63,5 +63,22 @@
 <button class="btn btn-default" type="submit">Button</button>
 <input class="btn btn-default" type="button" value="Input">
 <input class="btn btn-default" type="submit" value="Submit">
+
+<div class="row">
+	<div class="col-md-12"><div id="game"><canvas id="game"></canvas></div>
+	</div>
+</div>
+
+<script>
+var canvas=document.getElementById("game");
+var ctx=canvas.getContext('2d');
+canvas.width=480;
+canvas.height=320;
+ctx.fillstyle='black';
+ctx.beginPath();
+ctx.arc(100,150,50,0,Math.PI/2,true);
+ctx.fill();
+</script>
+
 </body>
 </html>
