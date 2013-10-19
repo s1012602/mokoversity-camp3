@@ -65,14 +65,15 @@
 <input class="btn btn-default" type="submit" value="Submit">
 
 <div class="row">
-	<div class="col-md-12"><div id="game"><canvas id="game"></canvas></div>
+	<div class="col-md-12"><canvas id="game"></canvas>
 	</div>
 </div>
 
 <script>
 (function(){
-var canvas=document.getElementById("game");
+var canvas=document.getElementById('game');
 var ctx=canvas.getContext('2d');
+
 canvas.width=480;
 canvas.height=320;
 ctx.fillstyle='black';
