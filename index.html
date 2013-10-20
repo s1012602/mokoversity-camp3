@@ -1,12 +1,10 @@
 <html>
 <head>
-	<title>Hello</title>
-
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
-
 <body>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -54,29 +52,20 @@
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
-	<div id="main"></div>
-	<div id="socre"></div>
-	<div class="row"></div>
-	<div class="col-md-2">Hello!</div>
-	<div class="col-md-10">World!</div>
-<a class="btn btn-default" href="#">Link</a>
-<button class="btn btn-default" type="submit">Button</button>
-<input class="btn btn-default" type="button" value="Input">
-<input class="btn btn-default" type="submit" value="Submit">
-
-<div class="row">
-	<div class="col-md-12"><canvas id="game"></canvas>
-	</div>
-</div>
-<script type="text/javascript" src="main.js"></script>
-  <style>
+<style>
 #main {
-  width:300px;
-  height:168px;
-  background: url(./ohana.jpg);
-
+        width: 640px;
+        height: 480px;
+        background: url(./ohana.jpg);
 }
 </style>
+<div class="row">
+        <div class="col-md-12">
+                        <div id="main"><canvas id="game"></canvas></div>
+        </div>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
