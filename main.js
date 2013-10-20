@@ -1,5 +1,11 @@
-var gameModule = (function() {
+/*properties
+    PI, addEventListener, arc, beginPath, clientX, clientY, fill, fillStyle, 
+    floor, getContext, getElementById, height, length, log, random, start, 
+    width
+*/
 
+var gameModule = (function() {
+        "use strict";
         var timeoutVar,
                 counter = 0,
                 ballX,
