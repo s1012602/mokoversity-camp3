@@ -2,9 +2,9 @@ var gameModule=(function()
 {
 
   var timeoutVar,
-      counter=0; 
-      var canvas = document.getElementById('game');
-     var ctx = canvas.getContext('2d');
+      counter=0,
+      canvas = document.getElementById('game'),
+      ctx = canvas.getContext('2d');
   canvas.width = 480;
   canvas.height = 320;
   
@@ -16,7 +16,7 @@ var gameModule=(function()
      var ballY = Math.floor(Math.random() * 500);
      var ballR = Math.floor(Math.random() * 100);
 
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = 'red';
     ctx.beginPath();
     ctx.arc(ballX, ballY, ballR, 0, Math.PI * 2 , true);
     ctx.fill();
